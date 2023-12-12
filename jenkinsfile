@@ -1,5 +1,5 @@
 pipeline {
-    agent 'maven'
+    label 'maven'
 
     stages {
         stage('Hello') {
