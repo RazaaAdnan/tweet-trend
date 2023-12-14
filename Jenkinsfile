@@ -4,11 +4,14 @@ pipeline {
 			label 'maven'
 		}
 	}
+environment {
+	PATH = "/opt/apache-maven-3.9.5/bin/mvn:$PATH"
+}
 
     stages {
-        stage('Hello') {
+        stage('build') {
             steps {
-                git branch: 'main', url: 'https://github.com/RazaaAdnan/tweet-trend.git'
+                sh 'mvn clean deploy'
             }
         }
     }
