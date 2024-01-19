@@ -1,5 +1,5 @@
 def registry = 'https://evamp.jfrog.io'
-def imageName = 'evamp.jfrog.io//evamp-docker-local/ttrend'
+def imageName = 'evamp.jfrog.io/evamp-docker-local/ttrend'
 def version   = '2.1.2'
 pipeline {
     agent{
